@@ -9,8 +9,8 @@ mode, mu4e, and helm.
 
 ## Installation
 
-Put the file tango-plus-theme.el in a directory included in your
-load-path.  Add the following line to your startup file (typically
-init.el):
+Have Emacs 24 or higher.  Put the file tango-plus-theme.el in a
+directory included in your load-path.  Add the following line to your
+startup file (typically init.el):
 
     (load-theme 'tango-plus t)
