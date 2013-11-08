@@ -50,7 +50,7 @@ Semantic, and Ansi-Color faces are included.")
       (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#2e3436")
       ;; Not in Tango palette; used for better contrast.
       (white "#ffffff") (black "#000000") (plum-0 "#edc4e2")
-      (red-0 "#ffe6e6") (cham-0 "#d2ffa6") (cham-4 "#346604")
+      (red-0 "#ffe6e6") (cham-0 "#e6ffc2") (cham-4 "#346604")
       (blue-0 "#8cc4ff") (orange-4 "#b35000"))
 
   (custom-theme-set-faces
@@ -64,8 +64,9 @@ Semantic, and Ansi-Color faces are included.")
    `(show-paren-match               ((,class (:background ,alum-1))))
    `(region                         ((,class (:background ,butter-1))))
    `(secondary-selection            ((,class (:background ,blue-0))))
-   `(isearch                        ((,class (:foreground ,white :background ,red-1))))
-   `(lazy-highlight                 ((,class (:background ,red-0))))
+   `(isearch                        ((,class (:foreground ,white :background ,cham-1))))
+   `(lazy-highlight                 ((,class (:background ,cham-0))))
+   `(evil-ex-substitute-matches     ((,class (:background ,red-0 :strike-through ,red-1))))
    `(evil-ex-substitute-replacement ((,class (:background ,cham-0))))
    `(trailing-whitespace            ((,class (:background ,red-1))))
    ;; Mode line faces
