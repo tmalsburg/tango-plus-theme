@@ -136,7 +136,7 @@ Semantic, and Ansi-Color faces are included.")
    ;; Flyspell
    `(flyspell-duplicate             ((,class (:underline ,orange-1))))
    `(flyspell-incorrect             ((,class (:underline ,red-1 :background ,red-0))))
-   ;; Org-mode
+   ;; Org mode
    `(org-level-1                    ((,class (:foreground ,blue-3 :weight bold))))
    `(org-level-2                    ((,class (:foreground ,blue-3))))
    `(org-level-3                    ((,class (:foreground ,blue-3))))
@@ -164,6 +164,29 @@ Semantic, and Ansi-Color faces are included.")
    `(helm-action                    ((,class ())))
    `(helm-candidate-number          ((,class (:background ,alum-5
                                               :foreground ,butter-1))))
+   ;; Markdown mode
+   `(markdown-italic-face           ((,class (:slant italic))))
+   `(markdown-bold-face             ((,class (:weight bold))))
+   `(markdown-header-rule-face      ((,class (:foreground ,blue-3 :weight bold))))
+   `(markdown-header-delimiter-face ((,class (:foreground ,blue-3))))
+   `(markdown-header-face           ((,class (:foreground ,blue-3))))
+   `(markdown-header-face-1         ((,class (:inherit markdown-header-face
+                                              :weight bold))))
+   `(markdown-header-face           ((,class (:foreground ,blue-3))))
+   `(markdown-inline-code-face      ((,class (:foreground ,choc-3))))
+   `(markdown-list-face             ((,class (:weight bold))))
+   `(markdown-blockquote-face       ((,class (:foreground ,choc-3 :slant italic))))
+   `(markdown-pre-face              ((,class (:foreground ,choc-3))))
+   `(markdown-language-keyword-face ((,class (:foreground ,blue-3))))
+   `(markdown-link-face             ((,class (:foreground ,blue-3))))
+   `(markdown-missing-link-face     ((,class (:foreground ,blue-3))))
+   `(markdown-reference-face        ((,class (:foreground ,blue-1))))
+   `(markdown-footnote-face         ((,class (:foreground ,blue-3))))
+   `(markdown-url-face              ((,class (:foreground ,blue-3))))
+   `(markdown-link-title-face       ((,class (:foreground ,blue-3))))
+   `(markdown-link-break-face       ((,class (:foreground ,blue-3))))
+   `(markdown-comment-face          ((,class (:foreground ,alum-4))))
+   `(markdown-math-face             ((,class (:foreground ,blue-3))))
    ;; Semantic faces
    `(semantic-decoration-on-includes
                                     ((,class (:underline  ,cham-4))))
