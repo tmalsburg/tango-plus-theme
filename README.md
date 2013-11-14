@@ -11,16 +11,25 @@ mode, mu4e, and helm.
 
 Have Emacs 24 or higher.  Put the file tango-plus-theme.el in a
 directory included in your load-path.  Add the following line to your
-startup file (typically init.el):
+start-up file (typically init.el):
 
     (load-theme 'tango-plus t)
 
 ## Design principles
 
-Use colors sparingly.  Use colors as semantic annotation: the meaning
-of a color should be consistent across buffers and languages.  Also,
-the meaning of a color should be self-explanatory to the extent
-possible.  For example, a red background is for errors (flyspell) and
+The goal of the theme is to support visual perception and to
+facilitate comprehension of code and text markup.  This may sound
+trivial but some themes instead try to look cool at the cost of
+ergonomics.
+
+Principle 1: Use colors sparingly.  Give the user subtle hints and
+avoid disrupting the reading process.  For example, coloring LaTeX
+macros interspersed in text with red would disrupt reading by
+attracting too much attention.
+
+Principle 2: Use colors as semantic annotation: the meaning of a color
+should be self-explanatory and consistent across buffers and
+languages.  For example, red background is for errors (flyspell) and
 stuff that was (ediff) or is going to be deleted (search & replace in
 evil).  Green background is for matches (isearch) or inserted material
 (ediff).  Selections are marked with yellow background, think text
