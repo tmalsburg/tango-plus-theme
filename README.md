@@ -17,6 +17,9 @@ start-up file (typically init.el):
 
 ## Screenshots
 
+Note that the colors look more vivid in the screenshots than they are
+in Emacs, perhaps that's due to the compression, not sure.
+
 ![A search in Evil](Screenshots/screenshot_search.png)
 ![A Helm session](Screenshots/screenshot_helm.png)
 
