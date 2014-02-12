@@ -2,6 +2,11 @@
 
 ;; Copyright (C) 2013 Titus von der Malsburg <malsburg@posteo.de>
 
+;; Author: Titus von der Malsburg <malsburg@posteo.de>
+;; Maintainer: Titus von der Malsburg <malsburg@posteo.de>
+;; URL: https://github.com/tmalsburg/tango-plus-theme
+;; Version: 1.0.0
+
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
@@ -18,10 +23,19 @@
 ;;; Commentary
 
 ;; This theme is based on the tango theme that is part of GNU Emacs.
-
+;;
 ;; Most colors in this theme come from the Tango palette, which is in
 ;; the public domain: http://tango.freedesktop.org/
 ;; Some colors were added to improve contrast.
+;;
+;; For details and screenshots visit the project page on Github:
+;;
+;;     https://github.com/tmalsburg/tango-plus-theme
+;;
+;; To use this theme put the following in your startup file:
+;;
+;;     (load-theme 'tango-plus t)
+;;
 
 ;;; Install:
 
