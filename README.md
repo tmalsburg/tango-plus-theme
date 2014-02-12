@@ -1,4 +1,4 @@
-tango-plus-theme
+Tango Plus Theme
 ================
 
 Color theme for Emacs loosely based on the tango palette.  As all
@@ -13,7 +13,12 @@ Have Emacs 24 or higher.  Put the file tango-plus-theme.el in a
 directory included in your load-path.  Add the following line to your
 start-up file (typically init.el):
 
-    (load-theme 'tango-plus t)
+(load-theme 'tango-plus t)
+
+## Screenshots
+
+![A search in Evil](Screenshots/screenshot_search.png)
+![A Helm session](Screenshots/screenshot_helm.png)
 
 ## Design principles
 
