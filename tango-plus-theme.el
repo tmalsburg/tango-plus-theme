@@ -225,6 +225,11 @@ Semantic, and Ansi-Color faces are included.")
    `(ansi-color-names-vector [,alum-6 ,red-3 ,cham-3 ,butter-3
 				      ,blue-3 ,plum-3 ,blue-1 ,alum-1])))
 
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
 (provide-theme 'tango-plus)
 
 ;; Local Variables:
