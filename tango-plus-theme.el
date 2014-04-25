@@ -89,6 +89,8 @@ Semantic, and Ansi-Color faces are included.")
    ;; Mode line faces
    `(mode-line                      ((,class (:background ,alum-5 :foreground ,alum-1))))
    `(mode-line-inactive             ((,class (:background ,alum-4 :foreground ,alum-3))))
+   ;; Window border face
+   `(vertical-border                ((,class (:foreground ,alum-3))))
    ;; Escape and prompt faces
    `(minibuffer-prompt              ((,class (:weight bold :foreground ,blue-3))))
    `(escape-glyph                   ((,class (:foreground ,red-3))))
