@@ -223,6 +223,8 @@ Semantic, and Ansi-Color faces are included.")
    `(flyspell-incorrect             ((,class (:underline (:color ,red-1 :style wave)
 					      :background ,red-0))))
    `(flyspell-duplicate             ((,class (:inherit flyspell-incorrect))))
+   ;; Wcheck
+   `(wcheck-default-face            ((,class (:inherit flyspell-incorrect))))
 
    ;; Org mode
    `(org-quote                      ((,class (:inherit quote))))
