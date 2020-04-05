@@ -205,6 +205,10 @@ Semantic, and Ansi-Color faces are included.")
    `(message-header-subject         ((,class (:inherit default))))
    `(message-cited-text             ((,class (:inherit deemphasized))))
    `(message-separator              ((,class (:inherit deemphasized))))
+   `(message-cited-text-1           ((,class (:inherit font-lock-comment-face))))
+   `(message-cited-text-2           ((,class (:inherit font-lock-comment-face))))
+   `(message-cited-text-3           ((,class (:inherit font-lock-comment-face))))
+   `(message-cited-text-4           ((,class (:inherit font-lock-comment-face))))
 
    ;; SMerge
    `(smerge-refined-change          ((,class (:background ,plum-1))))
@@ -375,7 +379,7 @@ Semantic, and Ansi-Color faces are included.")
    `(epresent-bullet-face           ((,class (:weight bold))))
    `(epresent-hidden-face           ((,class (:invisible t))))
 
-  ;; writegood-mode:
+   ;; writegood-mode:
    `(writegood-weasels-face         ((,class (:underline (:color ,red-1 :style wave)))))
    `(writegood-passive-voice-face   ((,class (:inherit writegood-weasels-face))))
    `(writegood-duplicates-face      ((,class (:inherit flyspell-duplicate))))
