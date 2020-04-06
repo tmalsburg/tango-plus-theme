@@ -160,6 +160,7 @@ Semantic, and Ansi-Color faces are included.")
    `(evil-ex-substitute-matches     ((,class (:background ,red-0
 					      :strike-through ,red-1))))
    `(evil-ex-substitute-replacement ((,class (:inherit lazy-highlight))))
+   `(evil-visual-mark-face          ((,class (:inherit default :foreground ,white :background ,blue-2))))
 
    ;; Gnus faces
    `(gnus-group-news-1              ((,class (:weight bold
@@ -230,12 +231,22 @@ Semantic, and Ansi-Color faces are included.")
    ;; Wcheck
    `(wcheck-default-face            ((,class (:inherit flyspell-incorrect))))
 
-   ;; Org mode
+   ;; Outline:
+   `(outline-1                      ((,class (:inherit font-lock-keyword-face))))
+   `(outline-2                      ((,class (:inherit font-lock-keyword-face))))
+   `(outline-3                      ((,class (:inherit font-lock-keyword-face))))
+   `(outline-4                      ((,class (:inherit font-lock-keyword-face))))
+   `(outline-5                      ((,class (:inherit font-lock-keyword-face))))
+   `(outline-6                      ((,class (:inherit font-lock-keyword-face))))
+   `(outline-7                      ((,class (:inherit font-lock-keyword-face))))
+   `(outline-8                      ((,class (:inherit font-lock-keyword-face))))
+
+   ;; Org mode:
    `(org-quote                      ((,class (:inherit quote))))
    `(org-verbatim                   ((,class (:inherit quote))))
    `(org-level-1                    ((,class (:inherit font-lock-keyword-face
 					      :height 1.3 :weight bold))))
-   `(org-level-2                    ((,class (:inherit font-lock-keyword-face))))
+   `(org-level-2                    ((,class (:inherit font-lock-keyword-face :weight bold))))
    `(org-level-3                    ((,class (:inherit font-lock-keyword-face))))
    `(org-level-4                    ((,class (:inherit font-lock-keyword-face))))
    `(org-level-5                    ((,class (:inherit font-lock-keyword-face))))
