@@ -33,23 +33,22 @@ in Emacs, perhaps that's due to the compression, not sure.
 ## Design principles
 
 The goal of the theme is to support visual perception and to
-facilitate comprehension of code and text markup.  This may sound
-trivial but some themes instead try to look cool at the cost of
-ergonomics.
+facilitate comprehension of code and text.  The goal is not primarily
+to look cool.
 
-Principle 1: Use colors sparingly.  Give the user subtle hints and
-avoid disrupting the reading process.  For example, coloring LaTeX
-macros interspersed in text in red would distract from the text.
+**Principle 1:** Use colors sparingly.  Give the user subtle hints and
+avoid disrupting the reading flow.  For example, coloring LaTeX macros
+in red would distract from the text and is therefore considered bad.
 
-Principle 2: Use colors as semantic annotation: the meaning of a color
-should be self-explanatory and consistent across buffers and
-languages.  For example, red background is for errors (flyspell) and
-stuff that was (ediff) or is going to be deleted (search & replace in
-evil).  Green background is for matches (isearch) or inserted material
-(ediff).  Selections are marked in yellow background – think text
-marker.  All neutral types of highlights use a light grey for the
-background (sentence-highlight-mode, hl-line-mode,
-show-paren-match).  Foreground colors: Blue is used for keywords
-(electric sparks).  Newly defined stuff like functions is red (hot
-from the forge).  String constants are brown like burned
-bricks.  Comments are grey.
+**Principle 2:** Use colors as semantic annotation: The meaning of a
+color should be largely self-explanatory and consistent across modes.
+For instance, red background is used for errors (flyspell) and stuff
+that was (ediff) or is going to be deleted (search & replace in evil).
+Green background is for matches (isearch) or inserted material
+(ediff).  Selections are marked in yellow – think text marker.  All
+neutral types of highlights use a light grey for the background
+(sentence-highlight-mode, hl-line-mode, show-paren-match).  Foreground
+colors: Blue is used for keywords (electric sparks).  Newly defined
+stuff like functions and variables are red (hot from the forge).
+String and other constants are brown like burned bricks.  Comments are
+grey.
