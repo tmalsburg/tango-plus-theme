@@ -1,22 +1,26 @@
+[![MELPA](https://melpa.org/packages/tango-plus-theme-badge.svg)](https://melpa.org/#/tango-plus-theme)
+
 Tango Plus Theme
 ================
 
-Color theme for Emacs loosely based on the tango palette.  As all
+Color theme for Emacs loosely based on the tango palette.  Like all
 themes, this is a work in progress.  The basis for this theme was the
-tango theme that is part of Emacs 24.  Some colors where added to
-increase contrast.  Also, support was added for evil, org mode, mu4e,
-helm, epresent and markdown-mode among others.
+tango theme included in Emacs 24.  Over time colors where added to
+increase contrast and support was added for evil, org mode, mu4e,
+helm, epresent, markdown, and other modes.
 
 ## Installation
 
-Have Emacs 24 or higher.  Put the file tango-plus-theme.el in a
-directory included in your load-path.  Add the following line to your
-start-up file (typically init.el):
+Put the file `tango-plus-theme.el` in a directory included in your
+load-path.  Add the following line to your start-up file (typically
+init.el):
 
     (load-theme 'tango-plus t)
 
 Alternatively, you can install from
 [MELPA](http://melpa.milkbox.net/#/tango-plus-theme).
+
+    (package-install 'tango-plus-theme)
 
 ## Screenshots
 
