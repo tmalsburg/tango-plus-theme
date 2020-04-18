@@ -84,8 +84,7 @@ Semantic, and Ansi-Color faces are included.")
    ;; Faces defined in faces.el:
    `(default                        ((,class (:foreground ,black
 					      :background ,white))))
-   `(deemphasized                   ((,class (:foreground ,alum-4
-					      :background ,white))))
+   `(deemphasized                   ((,class (:foreground ,alum-4))))
    `(quote                          ((,class (:foreground ,alum-5
 					      :slant italic))))
    ;; Skipping bold, italic, bold-italic, underline, fixed-pitch,
