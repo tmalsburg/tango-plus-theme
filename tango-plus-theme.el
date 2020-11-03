@@ -82,8 +82,7 @@ Semantic, and Ansi-Color faces are included.")
    ;; Base faces from which other faces inherit:
 
    ;; Faces defined in faces.el:
-   `(default                        ((,class (:foreground ,black
-					      :background ,white))))
+   `(default                        ((,class (:foreground ,black))))
    `(deemphasized                   ((,class (:foreground ,alum-4))))
    `(quote                          ((,class (:foreground ,alum-5
 					      :slant italic))))
