@@ -51,12 +51,12 @@
 Basic, Font Lock, Isearch, Gnus, Message, Ediff, Flyspell,
 Semantic, and Ansi-Color faces are included.")
 
-(defface quote
+(defface tango-plus-quotation
   '((t :inherit default))
   "Face for quotes."
   :group 'basic-faces)
 
-(defface deemphasized
+(defface tango-plus-deemphasized
   '((t :inherit default))
   "Face for visually deemphasized text."
   :group 'basic-faces)
@@ -83,9 +83,6 @@ Semantic, and Ansi-Color faces are included.")
 
    ;; Faces defined in faces.el:
    `(default                        ((,class (:foreground ,black))))
-   `(deemphasized                   ((,class (:foreground ,alum-4))))
-   `(quote                          ((,class (:foreground ,alum-5
-					      :slant italic))))
    ;; Skipping bold, italic, bold-italic, underline, fixed-pitch,
    ;; variable-pitch, shadow.
    `(link                           ((,class (:underline t
@@ -123,6 +120,12 @@ Semantic, and Ansi-Color faces are included.")
    `(show-paren-match               ((,class (:inherit highlight))))
    `(show-paren-mismatch            ((,class (:inherit trailing-whitespace))))
 
+   ;; Tango-plus faces:
+   `(tango-plus-deemphasized        ((,class (:foreground ,alum-4))))
+   `(tango-plus-quotation           ((,class (:foreground ,alum-5
+					                                                :slant italic))))
+
+
    ;; Faces in isearch.el:
    `(isearch                        ((,class (:foreground ,white
 					      :background ,cham-1))))
@@ -131,14 +134,14 @@ Semantic, and Ansi-Color faces are included.")
 
    ;; Font lock faces.  Other faces are defined in based on them to
    ;; the extend possible.
-   `(font-lock-comment-face         ((,class (:inherit deemphasized
+   `(font-lock-comment-face         ((,class (:inherit tango-plus-deemphasized
 					      :slant italic))))
    `(font-lock-comment-delimiter-face
-                                    ((,class (:inherit deemphasized
+                                    ((,class (:inherit tango-plus-deemphasized
                                               :slant italic))))
    `(font-lock-string-face          ((,class (:foreground ,choc-3
 					      :slant italic))))
-   `(font-lock-doc-face             ((,class (:inherit deemphasized))))
+   `(font-lock-doc-face             ((,class (:inherit tango-plus-deemphasized))))
    `(font-lock-keyword-face         ((,class (:foreground ,blue-3
 					      :weight light))))
    `(font-lock-builtin-face         ((,class (:foreground ,plum-2))))
@@ -149,7 +152,7 @@ Semantic, and Ansi-Color faces are included.")
 					      :slant italic))))
    `(font-lock-warning-face         ((,class (:foreground ,red-3))))
    `(font-lock-negation-char-face   ((,class (:foreground ,red-3))))
-   `(font-lock-preprocessor-face    ((,class (:inherit deemphasized))))
+   `(font-lock-preprocessor-face    ((,class (:inherit tango-plus-deemphasized))))
 
    ;; Application-specific face which inherit from the base faces if possible:
 
@@ -200,10 +203,10 @@ Semantic, and Ansi-Color faces are included.")
    `(message-header-newsgroups      ((,class (:inherit message-header-name))))
    `(message-header-to              ((,class (:inherit default :weight bold))))
    `(message-header-cc              ((,class (:inherit default))))
-   `(message-mml                    ((,class (:inherit deemphasized))))
+   `(message-mml                    ((,class (:inherit tango-plus-deemphasized))))
    `(message-header-subject         ((,class (:inherit default))))
-   `(message-cited-text             ((,class (:inherit deemphasized))))
-   `(message-separator              ((,class (:inherit deemphasized))))
+   `(message-cited-text             ((,class (:inherit tango-plus-deemphasized))))
+   `(message-separator              ((,class (:inherit tango-plus-deemphasized))))
    `(message-cited-text-1           ((,class (:inherit font-lock-comment-face))))
    `(message-cited-text-2           ((,class (:inherit font-lock-comment-face))))
    `(message-cited-text-3           ((,class (:inherit font-lock-comment-face))))
@@ -240,8 +243,8 @@ Semantic, and Ansi-Color faces are included.")
    `(outline-8                      ((,class (:inherit font-lock-keyword-face))))
 
    ;; Org mode:
-   `(org-quote                      ((,class (:inherit quote))))
-   `(org-verbatim                   ((,class (:inherit quote))))
+   `(org-quote                      ((,class (:inherit tango-plus-quotation))))
+   `(org-verbatim                   ((,class (:inherit tango-plus-quotation))))
    `(org-level-1                    ((,class (:inherit font-lock-keyword-face
 					      :height 1.3 :weight bold))))
    `(org-level-2                    ((,class (:inherit font-lock-keyword-face :weight bold))))
@@ -298,24 +301,24 @@ Semantic, and Ansi-Color faces are included.")
    `(mu4e-title-face                ((,class (:weight bold))))
    `(mu4e-unread-face               ((,class (:foreground ,blue-3
 					      :weight bold))))
-   `(mu4e-moved-face                ((,class (:inherit deemphasized))))
-   `(mu4e-thrashed-face             ((,class (:inherit deemphasized
+   `(mu4e-moved-face                ((,class (:inherit tango-plus-deemphasized))))
+   `(mu4e-thrashed-face             ((,class (:inherit tango-plus-deemphasized
 					      :strike-through t))))
    `(mu4e-draft-face                ((,class (:inherit font-lock-string-face))))
    `(mu4e-flagged-face              ((,class (:foreground ,red-3 :weight bold))))
-   `(mu4e-replied-face              ((,class (:inherit deemphasized))))
-   `(mu4e-forward-face              ((,class (:inherit deemphasized))))
+   `(mu4e-replied-face              ((,class (:inherit tango-plus-deemphasized))))
+   `(mu4e-forward-face              ((,class (:inherit tango-plus-deemphasized))))
    `(mu4e-header-face               ((,class (:inherit default))))
    `(mu4e-header-title-face         ((,class (:inherit default))))
    `(mu4e-header-highlight-face     ((,class (:inherit highlight))))
-   `(mu4e-header-marks-face         ((,class (:inherit deemphasized))))
+   `(mu4e-header-marks-face         ((,class (:inherit tango-plus-deemphasized))))
    `(mu4e-header-key-face           ((,class (:inherit font-lock-builtin-face))))
    `(mu4e-header-value-face         ((,class (:inherit default))))
    `(mu4e-special-header-value-face ((,class (:inherit default))))
    `(mu4e-contact-face              ((,class (:inherit default :weight bold))))
    `(mu4e-highlight-face            ((,class (:inherit default :bold t))))
    `(mu4e-modeline-face             ((,class ())))
-   `(mu4e-compose-separator-face    ((,class (:inherit deemphasized))))
+   `(mu4e-compose-separator-face    ((,class (:inherit tango-plus-deemphasized))))
    `(mu4e-cited-1-face              ((,class (:inherit font-lock-comment-face))))
    `(mu4e-cited-2-face              ((,class (:inherit font-lock-comment-face))))
    `(mu4e-cited-3-face              ((,class (:inherit font-lock-comment-face))))
@@ -353,8 +356,8 @@ Semantic, and Ansi-Color faces are included.")
    `(markdown-header-face           ((,class (:inherit font-lock-keyword-face))))
    `(markdown-inline-code-face      ((,class (:slant italic))))
    `(markdown-list-face             ((,class (:weight bold))))
-   `(markdown-blockquote-face       ((,class (:inherit quote))))
-   `(markdown-pre-face              ((,class (:inherit quote))))
+   `(markdown-blockquote-face       ((,class (:inherit tango-plus-quotation))))
+   `(markdown-pre-face              ((,class (:inherit tango-plus-quotation))))
    `(markdown-language-keyword-face ((,class (:inherit font-lock-keyword-face))))
    `(markdown-link-face             ((,class (:inherit font-lock-keyword-face))))
    `(markdown-missing-link-face     ((,class (:inherit font-lock-keyword-face))))
@@ -363,7 +366,7 @@ Semantic, and Ansi-Color faces are included.")
    `(markdown-url-face              ((,class (:inherit font-lock-keyword-face))))
    `(markdown-link-title-face       ((,class (:inherit font-lock-keyword-face))))
    `(markdown-link-break-face       ((,class (:inherit font-lock-keyword-face))))
-   `(markdown-comment-face          ((,class (:inherit deemphasized))))
+   `(markdown-comment-face          ((,class (:inherit tango-plus-deemphasized))))
    `(markdown-math-face             ((,class (:inherit font-lock-keyword-face))))
 
    ;; Semantic faces
