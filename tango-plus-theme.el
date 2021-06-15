@@ -126,6 +126,8 @@ Semantic, and Ansi-Color faces are included.")
 					                                                :slant italic))))
 
 
+   ;; Bookmark.el:
+   `(bookmark-face                  ((,class (:background ,cham-0))))
    ;; Faces in isearch.el:
    `(isearch                        ((,class (:foreground ,white
 					      :background ,cham-1))))
