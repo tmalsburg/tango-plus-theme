@@ -74,8 +74,8 @@ Semantic, and Ansi-Color faces are included.")
       (alum-4 "#888a85") (alum-5 "#5f615c") (alum-6 "#2e3436")
       ;; Not in Tango palette; used for better contrast.
       (white "#ffffff") (black "#000000") (plum-0 "#edc4e2")
-      (red-0 "#ffe6e6") (cham-0 "#e6ffc2") (cham-4 "#346604")
-      (blue-0 "#8cc4ff") (orange-4 "#b35000"))
+      (red-0 "#ffe6e6") (red-4 "#ff2d2d")(cham-0 "#e6ffc2")
+      (cham-4 "#346604") (blue-0 "#8cc4ff" ) (orange-4 "#b35000"))
 
   (custom-theme-set-faces
    'tango-plus
@@ -419,6 +419,24 @@ Semantic, and Ansi-Color faces are included.")
    
    ;; anzu-mode:
    `(anzu-mode-line                 ((,class (:inherit mode-line))))
+
+   ;; doom-modeline
+   `(doom-modeline-info                 ((,class (:weight bold
+		 			          :foreground ,cham-2))))
+   `(doom-modeline-warning              ((,class (:weight bold
+		 			          :foreground ,butter-1))))
+   `(doom-modeline-urgent               ((,class (:weight bold
+		 			          :foreground ,red-4))))
+   `(doom-modeline-project-dir          ((,class (:weight bold
+		 			          :foreground ,butter-3))))
+   `(doom-modeline-evil-normal-state    ((,class (:weight bold
+		 			          :foreground ,cham-1))))
+   `(doom-modeline-evil-insert-state    ((,class (:weight bold
+		 			          :foreground ,blue-0))))
+   `(doom-modeline-evil-visual-state    ((,class (:weight bold
+		 			          :foreground ,butter-1))))
+   `(doom-modeline-buffer-modified      ((,class (:inherit doom-modeline-urgent))))
+
    )
 
   (custom-theme-set-variables
