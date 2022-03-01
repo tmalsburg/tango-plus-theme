@@ -495,6 +495,13 @@ Semantic, and Ansi-Color faces are included.")
    `(dired-async-message                ((,class (:foreground ,butter-1 :weight bold))))
    `(dired-async-mode-message           ((,class (:foreground ,butter-1))))
 
+   ;;eshell
+   `(eshell-prompt                   ((,class (:foreground ,blue-3))))
+   `(eshell-ls-directory             ((,class (:weight bold :foreground ,black))))
+   `(eshell-ls-symlink               ((,class (:weight bold :foreground ,butter-3))))
+   `(eshell-ls-executable            ((,class (:foreground ,choc-3))))
+   `(eshell-ls-special               ((,class (:foreground ,plum-3))))
+
    )
 
   (custom-theme-set-variables
