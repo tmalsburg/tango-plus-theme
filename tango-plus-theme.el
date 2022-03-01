@@ -502,6 +502,14 @@ Semantic, and Ansi-Color faces are included.")
    `(eshell-ls-executable            ((,class (:foreground ,choc-3))))
    `(eshell-ls-special               ((,class (:foreground ,plum-3))))
 
+   ;;vterm
+   `(vterm-color-black               ((,class (:foreground ,black))))
+   `(vterm-color-red               ((,class (:foreground ,red-3))))
+   `(vterm-color-blue               ((,class (:foreground ,blue-3))))
+   `(vterm-color-green               ((,class (:foreground ,cham-3))))
+   `(vterm-color-yellow               ((,class (:foreground ,butter-3))))
+   `(vterm-color-magenta               ((,class (:foreground ,plum-3))))
+   `(vterm-color-cyan               ((,class (:foreground ,blue-1))))
    )
 
   (custom-theme-set-variables
