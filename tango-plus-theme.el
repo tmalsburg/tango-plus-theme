@@ -119,6 +119,8 @@ Semantic, and Ansi-Color faces are included.")
    `(success                        ((,class (:foreground ,cham-3))))
    `(show-paren-match               ((,class (:inherit highlight))))
    `(show-paren-mismatch            ((,class (:inherit trailing-whitespace))))
+   `(sh-quoted-exec                 ((,class (:foreground, black))))
+   `(sh-heredoc                     ((,class (:foreground, black))))
 
    ;; Tango-plus faces:
    `(tango-plus-deemphasized        ((,class (:foreground ,alum-4))))
