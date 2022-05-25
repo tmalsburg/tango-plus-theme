@@ -75,7 +75,7 @@ Semantic, and Ansi-Color faces are included.")
       ;; Not in Tango palette; used for better contrast.
       (white "#ffffff") (black "#000000") (plum-0 "#edc4e2")
       (red-0 "#ffe6e6") (red-4 "#ff2d2d")(cham-0 "#e6ffc2")
-      (cham-4 "#346604") (blue-0 "#8cc4ff" ) (orange-4 "#b35000"))
+      (cham-4 "#346604") (blue-0 "#8cc4ff") (orange-4 "#b35000"))
 
   (custom-theme-set-faces
    'tango-plus
@@ -119,6 +119,8 @@ Semantic, and Ansi-Color faces are included.")
    `(success                        ((,class (:foreground ,cham-3))))
    `(show-paren-match               ((,class (:inherit highlight))))
    `(show-paren-mismatch            ((,class (:inherit trailing-whitespace))))
+   `(sh-quoted-exec                 ((,class (:foreground, black))))
+   `(sh-heredoc                     ((,class (:foreground, black))))
 
    ;; Tango-plus faces:
    `(tango-plus-deemphasized        ((,class (:foreground ,alum-4))))
@@ -437,6 +439,77 @@ Semantic, and Ansi-Color faces are included.")
 		 			          :foreground ,butter-1))))
    `(doom-modeline-buffer-modified      ((,class (:inherit doom-modeline-urgent))))
 
+   ;; dired
+   `(diredp-display-msg                 ((,class (:foreground ,blue-0))))
+   `(diredp-compressed-file-suffix      ((,class (:foreground ,butter-1))))
+   `(diredp-date-time                   ((,class (:foreground ,choc-3))))
+   `(diredp-deletion                    ((,class (:foreground ,butter-1))))
+   `(diredp-deletion-file-name          ((,class (:foreground ,red-1))))
+   `(diredp-dir-heading                 ((,class (:foreground ,blue-3 :background ,alum-2))))
+   `(diredp-dir-priv                    ((,class (:foreground ,blue-3))))
+   `(diredp-exec-priv                   ((,class (:foreground ,red-1))))
+   `(diredp-executable-tag              ((,class (:foreground ,cham-1))))
+   `(diredp-file-name                   ((,class (:foreground ,black))))
+   `(diredp-file-suffix                 ((,class (:foreground ,red-2))))
+   `(diredp-flag-mark                   ((,class (:foreground ,butter-1))))
+   `(diredp-flag-mark-line              ((,class (:foreground ,orange-1))))
+   `(diredp-ignored-file-name           ((,class (:foreground ,alum-6))))
+   `(diredp-link-priv                   ((,class (:foreground ,butter-1))))
+   `(diredp-mode-line-flagged           ((,class (:foreground ,butter-1))))
+   `(diredp-mode-line-marked            ((,class (:foreground ,orange-1))))
+   `(diredp-no-priv                     ((,class (:foreground ,white))))
+   `(diredp-number                      ((,class (:foreground ,red-0))))
+   `(diredp-other-priv                  ((,class (:foreground ,butter-1))))
+   `(diredp-rare-priv                   ((,class (:foreground ,red-3))))
+   `(diredp-read-priv                   ((,class (:foreground ,butter-3))))
+   `(diredp-symlink                     ((,class (:foreground ,butter-1))))
+   `(diredp-write-priv                  ((,class (:foreground ,plum-1))))
+
+   ;; diredfl
+   `(diredfl-compressed-file-name       ((,class (:foreground ,alum-1 :weight bold))))
+   `(diredfl-compressed-file-suffix     ((,class (:inherit diredfl-compressed-file-name))))
+   `(diredfl-dir-name                   ((,class (:foreground ,alum-6 :weight bold))))
+   `(diredfl-date-time                  ((,class (:foreground ,choc-3))))
+   `(diredfl-deletion                   ((,class (:foreground ,butter-1))))
+   `(diredfl-deletion-file-name         ((,class (:foreground ,red-3))))
+   `(diredfl-dir-heading                ((,class (:foreground ,black :background ,alum-2))))
+   `(diredfl-dir-priv                   ((,class (:foreground ,black :weight bold))))
+   `(diredfl-exec-priv                  ((,class (:foreground ,blue-3))))
+   `(diredfl-executable-tag             ((,class (:foreground ,blue-3))))
+   `(diredfl-file-name                  ((,class (:foreground ,black))))
+   `(diredfl-file-suffix                ((,class (:inherit 'diredfl-file-name))))
+   `(diredfl-flag-mark                  ((,class (:foreground ,butter-1))))
+   `(diredfl-flag-mark-line             ((,class (:foreground ,orange-1))))
+   ;;`(diredfl-ignored-file-name          ((,class (:foreground ,alum-2))))
+   `(diredfl-link-priv                  ((,class (:foreground ,butter-1))))
+   `(diredfl-no-priv                    ((,class (:foreground ,white))))
+   `(diredfl-number                     ((,class (:foreground ,red-3)))) ;;n files in folder and size
+   `(diredfl-other-priv                 ((,class (:foreground ,butter-1))))
+   `(diredfl-rare-priv                  ((,class (:foreground ,blue-3))))
+   `(diredfl-read-priv                  ((,class (:foreground ,black))))
+   `(diredfl-symlink                    ((,class (:foreground ,plum-3))))
+   `(diredfl-write-priv                 ((,class (:foreground ,black))))
+
+   ;; dired-async
+   `(dired-async-failures               ((,class (:foreground ,red-3 :weight bold))))
+   `(dired-async-message                ((,class (:foreground ,butter-1 :weight bold))))
+   `(dired-async-mode-message           ((,class (:foreground ,butter-1))))
+
+   ;;eshell
+   `(eshell-prompt                   ((,class (:foreground ,blue-3))))
+   `(eshell-ls-directory             ((,class (:weight bold :foreground ,black))))
+   `(eshell-ls-symlink               ((,class (:weight bold :foreground ,butter-3))))
+   `(eshell-ls-executable            ((,class (:foreground ,choc-3))))
+   `(eshell-ls-special               ((,class (:foreground ,plum-3))))
+
+   ;;vterm
+   `(vterm-color-black               ((,class (:foreground ,black))))
+   `(vterm-color-red               ((,class (:foreground ,red-3))))
+   `(vterm-color-blue               ((,class (:foreground ,blue-3))))
+   `(vterm-color-green               ((,class (:foreground ,cham-3))))
+   `(vterm-color-yellow               ((,class (:foreground ,butter-3))))
+   `(vterm-color-magenta               ((,class (:foreground ,plum-3))))
+   `(vterm-color-cyan               ((,class (:foreground ,blue-1))))
    )
 
   (custom-theme-set-variables
