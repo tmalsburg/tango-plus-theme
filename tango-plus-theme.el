@@ -348,6 +348,9 @@ Semantic, and Ansi-Color faces are included.")
    `(magit-diff-hunk-header         ((,class (:inherit header-line))))
    `(magit-diff-file-header         ((,class (:inherit header-line))))
    `(git-commit-summary-face        ((,class (:inherit default))))
+   `(git-gutter:added               ((,class (:foreground ,cham-3))))
+   `(git-gutter:deleted             ((,class (:foreground ,red-3))))
+   `(git-gutter:modified             ((,class (:foreground ,plum-2))))
 
    ;; Helm
    `(helm-source-header             ((,class (:inherit default :weight bold
