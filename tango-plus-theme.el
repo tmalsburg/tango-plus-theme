@@ -110,7 +110,6 @@ Semantic, and Ansi-Color faces are included.")
    `(fringe                         ((,class (:foreground ,alum-2
 					      :background ,white))))
    ;; Skipping `scroll-bar', `border'.
-   `(cursor                         ((,class (:inverse-video t))))
    ;; Skipping `mouse', `tool-bar', `menu'.
    ;; FIXME `help-argument-name'
    ;; Skipping `glyphless-char'.
