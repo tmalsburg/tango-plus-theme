@@ -1,4 +1,4 @@
-;;; tango-plus-theme.el --- A color theme based on the tango palette
+;;; tango-plus-theme.el --- A color theme based on the tango palette  -*- lexical-binding: nil; -*-
 
 ;; Copyright (C) 2013 Titus von der Malsburg <malsburg@posteo.de>
 
