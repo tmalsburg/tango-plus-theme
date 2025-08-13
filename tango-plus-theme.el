@@ -344,6 +344,8 @@ Semantic, and Ansi-Color faces are included.")
 
    ;; Magit et al:
    `(diff-context                   ((,class (:inherit highlight))))
+   `(diff-refine-removed            ((,class (:inherit magit-diff-removed :underline t))))
+   `(diff-refine-added              ((,class (:inherit magit-diff-added :underline t))))
    `(magit-diff-hunk-header         ((,class (:inherit header-line))))
    `(magit-diff-file-header         ((,class (:inherit header-line))))
    `(git-commit-summary-face        ((,class (:inherit default))))
